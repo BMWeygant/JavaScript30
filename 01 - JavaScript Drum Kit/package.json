@@ -1,0 +1,12 @@
+{
+  "name": "js30drumkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index-START.html",
+  "scripts": {
+    "start": "node index-START.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
