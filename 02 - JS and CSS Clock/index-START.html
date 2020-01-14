@@ -79,11 +79,17 @@ function setDate(){
   const now = new Date
   const seconds = now.getSeconds()
   const minutes = now.getMinutes()
+  const hours = now.getHours()
   const secondsDegrees = ((seconds / 60) * 360) + 90
   secondHand.style.transform = `rotate(${secondsDegrees}deg`
+  secondHand.style.height = '3px'
+  secondHand.style.background = 'orange'
   const minutesDegrees = ((minutes / 60) * 360) + 90
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`
-  console.log(minutes)
+  const hoursDegrees = ((hours / 60) * 360) + 90
+  hourHand.style.transform = `rotate(${hoursDegrees}deg)`
+  hourHand.style.background = 'purple'
+  console.log(hours, minutes, seconds)
 }
 
 
