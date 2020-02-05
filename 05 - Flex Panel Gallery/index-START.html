@@ -121,11 +121,11 @@
   <script>
     const panels = document.querySelectorAll('.panel')
 
-    function toggleOpen(e){
+    function toggleOpen(){
       this.classList.toggle('open')
     }
 
-    function toggleActive(){
+    function toggleActive(e){
       if(e.propertyName.includes('flex')){
       this.classList.toggle('open-active')
       }
